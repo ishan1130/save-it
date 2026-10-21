@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/vmc trial1.css">
+    <link rel="javascript" href="/vmc_trial1.js">
+    <title>VMC trial1(5-7-2026)</title>
+</head>
+<body>
+        <script src="/vmc_trial1.js"></script>
+
+    <div class="horizontal-area">Ishan's VMC HMI trial1</div>
+
+    <input type="text" class="number" id="num" min="0" max="100" value="0" disabled></input><br>
+
+    <button class="button" id="button1" onclick="moveLeft1()" >-1</button>
+    <button class="button" id="button2" onclick="moveRight1()">+1</button><br><br>
+
+    <button class="button" id="button3" onclick="moveLeft25()" >-0.25</button>
+    <button class="button" id="button4" onclick="moveRight25()">+0.25</button><br><br>
+
+    <button class="button" id="button5" onclick="moveLeft50()" >-0.5</button>
+    <button class="button" id="button6" onclick="moveRight50()">+0.5</button><br><br>
+
+    <button class="button" id="Set0" onclick="Set0()">Return 0</button>
+    
+    <form oninput="num.value = parseFloat(slider.value)">
+        <input type="range" class="slider" id="slider" max="100" min="-100" value="0"></input>
+    </form>
+
+    <div class="container">
+        <input type="file" id="my-file" onload="file()" multiple>
+        <p id="message">hey there</p>
+    </div>
+
+</body>
+</html>
